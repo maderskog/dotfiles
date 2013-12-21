@@ -48,11 +48,15 @@ plugins=(git lein gradle colored-man zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias json="underscore print --color"
+#alias json="underscore print --color"
 alias c="clear"
 alias diff="colordiff"
 
 ssh-setup() { cat ~/.ssh/id_rsa.pub | ssh $1 'cat - >> ~/.ssh/authorized_keys'; }
+
+function json(){
+  cat $1 |underscore print --color
+}
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Applications/gradle-1.3/bin:/Applications/groovy-2.1.1/bin:/Applications/scala-2.10.1/bin:/Users/michael/Development/play-2.0.3:~/bin:$PATH
