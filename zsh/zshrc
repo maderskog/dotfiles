@@ -48,13 +48,19 @@ plugins=(git lein gradle colored-man zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-#alias json="underscore print --color"
-alias c="clear"
-alias diff="colordiff"
+function diff() {
+  colordiff "$@"
+}
 
-ssh-setup() { cat ~/.ssh/id_rsa.pub | ssh $1 'cat - >> ~/.ssh/authorized_keys'; }
+function c() {
+  clear
+}
 
-function json(){
+function ssh-setup() { 
+  cat ~/.ssh/id_rsa.pub | ssh $1 'cat - >> ~/.ssh/authorized_keys';
+}
+
+function json() {
   cat $1 |underscore print --color
 }
 
