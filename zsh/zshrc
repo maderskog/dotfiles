@@ -72,6 +72,9 @@ function setjdk() {
     fi
     export JAVA_HOME=`/usr/libexec/java_home -v $@`
     export PATH=$JAVA_HOME/bin:$PATH
+    java -version
+  else
+    /usr/libexec/java_home --verbose
   fi
 }
 
