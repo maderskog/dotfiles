@@ -4,16 +4,17 @@
 [core]
 	excludesfile = ~/.gitignore_global
 [alias]
+	br = branch
+	ci = commit
+    cam = commit -a -m
+	co = checkout
+	dc = diff --cached
+	df = diff
+    dw = diff --word-diff
+	lg = log -p
 	lol = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	st = status
-	ci = commit
-	br = branch
-	co = checkout
-	df = diff
-	dc = diff --cached
-	lg = log -p
 	who = shortlog -s --
-        cam = commit -a -m
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
