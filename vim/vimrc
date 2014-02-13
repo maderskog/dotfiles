@@ -159,5 +159,9 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
-
 "------------------------------------------------------------
+" From http://www.danielmiessler.com/study/vim/
+" Enables possibility to use . to repeat command on visually selected parts of
+" text.
+
+vnoremap . :norm.<CR>
