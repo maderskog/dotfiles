@@ -5,15 +5,15 @@
 	excludesfile = ~/.gitignore_global
 [alias]
 	br = branch
+	cam = commit -a -m
 	ci = commit
-    cam = commit -a -m
 	co = checkout
-	dc = diff --cached
 	df = diff
-    dw = diff --word-diff
-	lg = log -p
+	dc = diff --cached
 	lol = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lg = log -p
 	st = status
+	wd = diff --word-diff
 	who = shortlog -s --
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -25,16 +25,3 @@
 	helper = osxkeychain
 [color]
 	ui = auto
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
-[merge]
-	tool = Kaleidoscope
