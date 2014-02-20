@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # vim
+
 ln -nfs ~/dotfiles/vim/vimrc ~/.vimrc
 ln -nfs ~/dotfiles/vim/vim ~/.vim
 
