@@ -4,3 +4,6 @@ zsh/oh-my-zsh
 # don't track 3rd party plugins
 zsh/custom/plugins/zsh-syntax-highlighting
 
+# don't track .netrwhist
+vim/vim/.netrwhist
+
