@@ -2,8 +2,9 @@
 
 # vim
 
-ln -nfs ~/dotfiles/vim/vimrc ~/.vimrc
+mkdir -p ~/dotfiles/vim/vim
 ln -nfs ~/dotfiles/vim/vim ~/.vim
+ln -nfs ~/dotfiles/vim/vimrc ~/.vimrc
 
 # zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/dotfiles/zsh/oh-my-zsh
