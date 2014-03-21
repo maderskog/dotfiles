@@ -89,7 +89,7 @@ DOCKER_HOST=tcp://127.0.0.1:4243
 # Customize to your needs...
 GRAILS_HOME=/Applications/grails
 
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Applications/gradle/bin:/Applications/groovy/bin:/Applications/grails/bin:/Applications/scala/bin:~/bin:$PATH
+export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/chef/bin:/Applications/gradle/bin:/Applications/groovy/bin:/Applications/grails/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:~/bin:$PATH
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 #[[ -s "/Users/michael/.gvm/bin/gvm-init.sh" ]] && source "/Users/michael/.gvm/bin/gvm-init.sh"
