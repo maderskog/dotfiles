@@ -13,10 +13,18 @@ This far, it covers:
 Planning to add:
 * OS X
 * bash
-* iterm
+* iTerm
 
 Still thinking about:
 * ssh
+
+
+Caveats
+=======
+
+I have only tested this on Mac OS X.
+
+You do need a terminal that handles unicode characters, [iTerm2](http://www.iterm2.com/) for example...
 
 
 Installation
@@ -30,7 +38,7 @@ In your home directory:
 
 Oh, and do change your default shell to zsh, of course :)
 
-    $ sudo chsh -s zsh yourusername
+    $ sudo chsh -s zsh <yourusername>
 
 
 Usage
@@ -49,4 +57,3 @@ Documentation
 =============
 
 TBD
-
