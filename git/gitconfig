@@ -26,3 +26,5 @@
 	helper = osxkeychain
 [color]
 	ui = auto
+[push]
+	default = simple
