@@ -46,3 +46,5 @@ Thumbs.db
 .settings/
 .settings/*
 .classpath
+.gradle/
+.gradle/*
