@@ -48,3 +48,7 @@ Thumbs.db
 .classpath
 .gradle/
 .gradle/*
+build/
+build/*
+out/
+out/*
