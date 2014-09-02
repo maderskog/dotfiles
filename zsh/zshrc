@@ -87,11 +87,12 @@ function removeJdkFromPath() {
 DOCKER_HOST=tcp://127.0.0.1:4243
 
 # Customize to your needs...
-GROOVY_HOME=/usr/local/opt/groovy/libexec
-GRAILS_HOME=/usr/local/opt/grails/libexec
-GRADLE_HOME=/usr/local/opt/gradle/libexec
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export GRAILS_HOME=/usr/local/opt/grails/libexec
+export GRADLE_HOME=/usr/local/opt/gradle/libexec
+export GOPATH=~/Development/Go
 
-export PATH=~/anaconda/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/opt/chef/bin:Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/bin:$PATH
+export PATH=~/anaconda/bin:/opt/local/bin:/opt/local/sbin:/opt/chef/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/bin:$GOPATH/bin:$PATH
 
 launchctl setenv PATH $PATH
 
