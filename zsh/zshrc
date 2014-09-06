@@ -91,6 +91,7 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
 export GOPATH=~/Development/Go
+export SCALA_HOME=/usr/local/opt/scala/idea
 
 export PATH=~/anaconda/bin:/opt/local/bin:/opt/local/sbin:/opt/chef/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/bin:$GOPATH/bin:$PATH
 
