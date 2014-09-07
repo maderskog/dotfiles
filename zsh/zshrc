@@ -56,6 +56,10 @@ function c() {
   clear
 }
 
+function ql() {
+  qlmanage -p "$@" >& /dev/null &
+}
+
 function ssh-setup() {
   cat ~/.ssh/id_rsa.pub | ssh $1 'cat - >> ~/.ssh/authorized_keys';
 }
