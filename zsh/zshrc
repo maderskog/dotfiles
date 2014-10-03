@@ -68,6 +68,10 @@ function json() {
   cat $1 |underscore print --color
 }
 
+function xml() {
+  xmllint --format $1 | pygmentize -l xml
+}
+
 function setjdk() {
   if [ $# -ne 0 ]; then
     removeJdkFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
