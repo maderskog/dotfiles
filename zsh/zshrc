@@ -95,6 +95,7 @@ function removeJdkFromPath() {
 DOCKER_HOST=tcp://127.0.0.1:4243
 
 # Customize to your needs...
+export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
