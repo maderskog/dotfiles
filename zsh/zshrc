@@ -1,9 +1,9 @@
 # set -x
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=${HOME}/.oh-my-zsh
 
 # Path to my custom stuff
-ZSH_CUSTOM=$HOME/dotfiles/zsh/custom
+ZSH_CUSTOM=${HOME}/dotfiles/zsh/custom
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -46,7 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew brew-cask colored-man docker git gradle lein mix node npm sbt tmux vagrant zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+source ${ZSH}/oh-my-zsh.sh
 
 function diff() {
   colordiff "$@"
@@ -76,10 +76,10 @@ function setjdk() {
   if [ $# -ne 0 ]; then
     removeJdkFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
     if [ -n "${JAVA_HOME+x}" ]; then
-      removeJdkFromPath $JAVA_HOME
+      removeJdkFromPath ${JAVA_HOME}
     fi
     export JAVA_HOME=`/usr/libexec/java_home -v $@`
-    export PATH=$JAVA_HOME/bin:$PATH
+    export PATH=${JAVA_HOME}/bin:${PATH}
     java -version
   else
     /usr/libexec/java_home --verbose
@@ -87,11 +87,10 @@ function setjdk() {
 }
 
 function removeJdkFromPath() {
-  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
+  export PATH=$(echo ${PATH} | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
 # Needed for docker
-#
 DOCKER_HOST=tcp://127.0.0.1:4243
 
 # Customize to your needs...
@@ -101,10 +100,9 @@ export GRAILS_HOME=/usr/local/opt/grails/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
 export GOPATH=~/Development/Go
 export SCALA_HOME=/usr/local/opt/scala/idea
-
 export PATH=~/anaconda/bin:/opt/local/bin:/opt/local/sbin:/opt/chef/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/bin:$GOPATH/bin:$PATH
 
-launchctl setenv PATH $PATH
+launchctl setenv PATH ${PATH}
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 #[[ -s "/Users/michael/.gvm/bin/gvm-init.sh" ]] && source "/Users/michael/.gvm/bin/gvm-init.sh"
