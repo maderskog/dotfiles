@@ -102,6 +102,10 @@ export GOPATH=~/Development/Go
 export SCALA_HOME=/usr/local/opt/scala/idea
 export PATH=~/anaconda/bin:/opt/local/bin:/opt/local/sbin:/opt/chef/bin:/usr/local/bin:/usr/local/opt/go/libexec/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/bin:$GOPATH/bin:$PATH
 
+if [[ -f ~/.zshrc-local ]]; then
+  . ~/.zshrc-local
+fi
+
 launchctl setenv PATH ${PATH}
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
