@@ -90,10 +90,8 @@ function removeJdkFromPath() {
   export PATH=$(echo ${PATH} | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
-# Needed for docker
-DOCKER_HOST=tcp://127.0.0.1:4243
-
 # Customize to your needs...
+export DOCKER_HOST=tcp://127.0.0.1:4243
 export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
