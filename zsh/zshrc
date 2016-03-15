@@ -47,6 +47,7 @@ export COMPLETION_WAITING_DOTS="true"
 export plugins=(brew brew-cask colored-man-pages docker git gradle lein mix node npm sbt tmux vagrant zsh-syntax-highlighting)
 
 source ${ZSH}/oh-my-zsh.sh
+source ~/ansible/hacking/env-setup -q
 
 function diff() {
   colordiff "$@"
