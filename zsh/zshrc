@@ -91,6 +91,7 @@ function removeJdkFromPath() {
 }
 
 # Customize to your needs...
+export ANSIBLE_INVENTORY=/etc/ansible/hosts
 export DOCKER_HOST=tcp://127.0.0.1:4243
 export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
