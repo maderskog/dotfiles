@@ -33,3 +33,5 @@
 	smudge = git-media-smudge %f
 [rerere]
 	enabled = true
+[user]
+	useconfigonly = true
