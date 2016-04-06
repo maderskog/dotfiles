@@ -44,10 +44,10 @@ export COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-export plugins=(brew brew-cask colored-man-pages docker git gradle lein mix node npm sbt tmux vagrant zsh-syntax-highlighting)
+plugins=(brew brew-cask colored-man-pages docker git gradle lein mix node npm sbt vagrant zsh-syntax-highlighting)
 
 source ${ZSH}/oh-my-zsh.sh
-source ~/ansible/hacking/env-setup -q
+#source ~/ansible/hacking/env-setup -q
 
 function diff() {
   colordiff "$@"
@@ -94,7 +94,7 @@ function removeJdkFromPath() {
 # Customize to your needs...
 export ANSIBLE_INVENTORY=/etc/ansible/hosts
 export DOCKER_HOST=tcp://127.0.0.1:4243
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
