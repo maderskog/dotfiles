@@ -66,7 +66,7 @@ function ssh-setup() {
 }
 
 function json() {
-  cat $1 |underscore print --color
+  cat $1 | jq
 }
 
 function xml() {
@@ -93,7 +93,6 @@ function removeJdkFromPath() {
 
 # Customize to your needs...
 export ANSIBLE_INVENTORY=/etc/ansible/hosts
-export DOCKER_HOST=tcp://127.0.0.1:4243
 #export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
@@ -112,3 +111,5 @@ launchctl setenv PATH ${PATH}
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 #[[ -s "~/.gvm/bin/gvm-init.sh" ]] && source "~/.gvm/bin/gvm-init.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
