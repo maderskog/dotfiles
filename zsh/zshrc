@@ -112,4 +112,4 @@ launchctl setenv PATH ${PATH}
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
 #[[ -s "~/.gvm/bin/gvm-init.sh" ]] && source "~/.gvm/bin/gvm-init.sh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
