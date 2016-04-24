@@ -11,6 +11,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/dotfiles/zsh/oh-my-zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/dotfiles/zsh/custom/plugins/zsh-syntax-highlighting
 ln -nfs ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -nfs ~/dotfiles/zsh/oh-my-zsh ~/.oh-my-zsh
+ln -nfs ~/dotfiles/zshi/completions ~/.oh-my-zsh/completions
 
 # git
 ln -nfs ~/dotfiles/git/gitignore_global ~/.gitignore_global
