@@ -93,7 +93,7 @@ function removeJdkFromPath() {
 
 # Customize to your needs...
 export ANSIBLE_INVENTORY=/etc/ansible/hosts
-#export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home)
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
