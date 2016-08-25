@@ -38,7 +38,7 @@ In your home directory:
 
 Oh, and do change your default shell to zsh, of course :)
 
-    $ sudo chsh -s zsh <yourusername>
+    $ sudo chsh -s $(which zsh) $(whoami)
 
 
 Usage
