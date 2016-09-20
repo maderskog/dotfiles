@@ -100,6 +100,9 @@ export GRADLE_HOME=/usr/local/opt/gradle/libexec
 export GOPATH=~/Development/Go
 export SCALA_HOME=/usr/local/opt/scala/idea
 export PATH=/usr/local/bin:/usr/bin:~/bin:/usr/local/opt/go/libexec/bin:/opt/chef/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/anaconda/bin:$GOPATH/bin:$PATH
+export ORACLE_HOME=/Applications/oracle/product/instantclient_64/12.1.0.2.0
+export PATH=$ORACLE_HOME/bin:$PATH
+export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib
 
 if [[ -f ~/.zshrc-local ]]; then
   . ~/.zshrc-local
