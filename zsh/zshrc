@@ -12,24 +12,8 @@ export ZSH_CUSTOM=${HOME}/dotfiles/zsh/custom
 # time that oh-my-zsh is loaded.
 export ZSH_THEME="michael"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
-
-# Uncomment this to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
 export DISABLE_CORRECTION="true"
@@ -80,7 +64,7 @@ function setjdk() {
     if [ -n "${JAVA_HOME+x}" ]; then
       removeJdkFromPath ${JAVA_HOME}
     fi
-    export JAVA_HOME=`/usr/libexec/java_home -v $@`
+    export JAVA_HOME=$(/usr/libexec/java_home -v "$@")
     export PATH=${JAVA_HOME}/bin:${PATH}
     java -version
   else
@@ -108,7 +92,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 if [[ -f ~/.zshrc-local ]]; then
-  . ~/.zshrc-local
+  source ~/.zshrc-local
 fi
 
 export fs="df -hP | awk '+\$5 >= 80 {print}'|grep -v nas0"
