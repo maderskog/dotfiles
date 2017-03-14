@@ -97,6 +97,8 @@ fi
 
 export fs="df -hP | awk '+\$5 >= 80 {print}'|grep -v nas0"
 
+compdef gpg2=gpg
+
 launchctl setenv PATH ${PATH}
 
 #THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!

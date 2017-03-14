@@ -36,3 +36,5 @@
 	enabled = true
 [user]
 	useconfigonly = true
+	email = michael.aderskog@gmail.com
+	name = Michael Aderskog
