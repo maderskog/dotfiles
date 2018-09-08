@@ -79,15 +79,28 @@ function setjdk() {
 # Customize to your needs...
 export ANSIBLE_INVENTORY=/etc/ansible/hosts
 export JAVA_HOME=$(/usr/libexec/java_home)
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export GRAILS_HOME=/usr/local/opt/grails/libexec
-export GRADLE_HOME=/usr/local/opt/gradle/libexec
-export GOPATH=~/Development/Go
-export SCALA_HOME=/usr/local/opt/scala/idea
-export PATH=/usr/local/bin:/usr/bin:~/bin:/usr/local/opt/go/libexec/bin:/opt/chef/bin:/Applications/scala/bin:/Applications/dart/dart-sdk/bin:/Applications/vert.x/bin:~/anaconda/bin:$GOPATH/bin:$PATH
-export ORACLE_HOME=/Applications/oracle/product/instantclient_64/12.1.0.2.0
-export PATH=$ORACLE_HOME/bin:$PATH
-export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib
+#export GROOVY_HOME=/usr/local/opt/groovy/libexec
+#export GRAILS_HOME=/usr/local/opt/grails/libexec
+#export GRADLE_HOME=/usr/local/opt/gradle/libexec
+#export GOPATH=~/Development/Go
+#export SCALA_HOME=/usr/local/opt/scala/idea
+#export ORACLE_HOME=/Applications/oracle/product/instantclient_64/12.1.0.2.0
+export PATH=/usr/local/bin
+export PATH=$PATH:~/bin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/sbin
+export PATH=$PATH:/Applications/'VMware Fusion.app'/Contents/Public
+#export PATH=$PATH:/usr/local/opt/go/libexec/bin
+#export PATH=$PATH:/opt/chef/bin
+#export PATH=$PATH:/Applications/scala/bin
+#export PATH=$PATH:/Applications/dart/dart-sdk/bin
+#export PATH=$PATH:/Applications/vert.x/bin
+#export PATH=$PATH:~/anaconda/bin
+#export PATH=$PATH:$GOPATH/bin
+#export PATH=$ORACLE_HOME/bin:$PATH
+#export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
