@@ -91,6 +91,7 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
+export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/3.7/bin
 export PATH=$PATH:/Applications/'VMware Fusion.app'/Contents/Public
 #export PATH=$PATH:/usr/local/opt/go/libexec/bin
 #export PATH=$PATH:/opt/chef/bin
