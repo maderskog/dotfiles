@@ -85,9 +85,13 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 #export GOPATH=~/Development/Go
 #export SCALA_HOME=/usr/local/opt/scala/idea
 #export ORACLE_HOME=/Applications/oracle/product/instantclient_64/12.1.0.2.0
+
+#PATH settings
 export PATH=/usr/local/bin
+export PATH=$PATH:/usr/local/opt/curl/bin
 export PATH=$PATH:/usr/local/opt/ruby/bin
 export PATH=$PATH:/usr/local/lib/ruby/gems/2.6.0/bin
+export PATH=$PATH:~/.ghcup/env
 export PATH=$PATH:~/bin
 export PATH=$PATH:/usr/bin
 export PATH=$PATH:/bin
@@ -106,6 +110,8 @@ export PATH=$PATH:/Applications/'VMware Fusion.app'/Contents/Public
 #export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+source /Users/miade/.ghcup/env
 
 if [[ -f ~/.zshrc-local ]]; then
   source ~/.zshrc-local
