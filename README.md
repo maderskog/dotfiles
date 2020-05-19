@@ -12,7 +12,6 @@ This far, it covers:
 
 Planning to add:
 * OS X
-* bash
 * iTerm
 
 Still thinking about:
